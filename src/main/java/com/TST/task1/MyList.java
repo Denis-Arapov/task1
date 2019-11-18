@@ -190,7 +190,7 @@ public class MyList<T> {
 
     /**
      * Сортировка пузырьком
-     * @param comparator
+     * @param comparator компоратор для сравнения
      */
     public void bubbleSort(Comparator<T> comparator) {
         Node<T> temp = first;
@@ -212,7 +212,7 @@ public class MyList<T> {
 
     /**
      * Шейкерная сортировка
-     * @param comparator
+     * @param comparator компоратор для сравнения
      */
     public void shakersort(Comparator<T> comparator){
         Node<T> temp1 = first;
@@ -246,8 +246,8 @@ public class MyList<T> {
                 temp2 = temp2.getPrev();
             }
             beg++;
-            tempFirst = tempFirst.getNext();
-            tempLast = tempLast.getPrev();
+            if(b1)tempFirst = tempFirst.getNext();
+            if(b2)tempLast = tempLast.getPrev();
 
         }
 
