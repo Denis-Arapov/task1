@@ -55,6 +55,7 @@ public class Person implements IPerson {
     }
 
     /**
+     *
      * @return Возвращает дату рождения человека
      */
     public Integer getAge() {
